@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0C657AB924E94065001BD378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C657AB824E94065001BD378 /* AppDelegate.swift */; };
-		0C657ABB24E94065001BD378 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C657ABA24E94065001BD378 /* SceneDelegate.swift */; };
 		0C657ABD24E94065001BD378 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C657ABC24E94065001BD378 /* ViewController.swift */; };
 		0C657AC024E94065001BD378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C657ABE24E94065001BD378 /* Main.storyboard */; };
 		0C657AC224E94067001BD378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C657AC124E94067001BD378 /* Assets.xcassets */; };
@@ -19,7 +18,6 @@
 /* Begin PBXFileReference section */
 		0C657AB524E94065001BD378 /* MVVM-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C657AB824E94065001BD378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C657ABA24E94065001BD378 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0C657ABC24E94065001BD378 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C657ABF24E94065001BD378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C657AC124E94067001BD378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,8 +62,14 @@
 		0C657AB724E94065001BD378 /* MVVM-C */ = {
 			isa = PBXGroup;
 			children = (
+				0C657AF524E947B5001BD378 /* Utils */,
+				0C657AF224E94745001BD378 /* Assembler */,
+				0C657AF124E9472B001BD378 /* Networking */,
+				0C657AF024E94708001BD378 /* Coordinator */,
+				0C657AF424E9479C001BD378 /* Model */,
+				0C657AEF24E94702001BD378 /* View */,
+				0C657AEE24E946F9001BD378 /* ViewController */,
 				0C657AB824E94065001BD378 /* AppDelegate.swift */,
-				0C657ABA24E94065001BD378 /* SceneDelegate.swift */,
 				0C657ABC24E94065001BD378 /* ViewController.swift */,
 				0C657ABE24E94065001BD378 /* Main.storyboard */,
 				0C657AC124E94067001BD378 /* Assets.xcassets */,
@@ -76,13 +80,61 @@
 			path = "MVVM-C";
 			sourceTree = "<group>";
 		};
+		0C657AEE24E946F9001BD378 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0C657AEF24E94702001BD378 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C657AF024E94708001BD378 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		0C657AF124E9472B001BD378 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0C657AF224E94745001BD378 /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		0C657AF424E9479C001BD378 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C657AF524E947B5001BD378 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		AA07B05938C20A68B11C8255 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				808CF4F7891B4B25E37C685B /* Pods-MVVM-C.debug.xcconfig */,
 				3E5A1DD56FC48A06425B18CB /* Pods-MVVM-C.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -194,7 +246,6 @@
 			files = (
 				0C657ABD24E94065001BD378 /* ViewController.swift in Sources */,
 				0C657AB924E94065001BD378 /* AppDelegate.swift in Sources */,
-				0C657ABB24E94065001BD378 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +396,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9P5QVDV7V7;
 				INFOPLIST_FILE = "MVVM-C/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,7 +406,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "MVVM-C/MVVM-C-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -367,6 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9P5QVDV7V7;
 				INFOPLIST_FILE = "MVVM-C/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,7 +428,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MVVM-C/MVVM-C-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
