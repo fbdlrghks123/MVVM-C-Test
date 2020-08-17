@@ -8,22 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		0C657AB924E94065001BD378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C657AB824E94065001BD378 /* AppDelegate.swift */; };
-		0C657ABD24E94065001BD378 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C657ABC24E94065001BD378 /* ViewController.swift */; };
-		0C657AC024E94065001BD378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C657ABE24E94065001BD378 /* Main.storyboard */; };
+		0C657ABD24E94065001BD378 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C657ABC24E94065001BD378 /* IntroViewController.swift */; };
 		0C657AC224E94067001BD378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C657AC124E94067001BD378 /* Assets.xcassets */; };
 		0C657AC524E94067001BD378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C657AC324E94067001BD378 /* LaunchScreen.storyboard */; };
+		0CC9B93024EAA4C90025D1A1 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B92F24EAA4C90025D1A1 /* AppFlow.swift */; };
+		0CC9B93224EAA5000025D1A1 /* AppStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B93124EAA5000025D1A1 /* AppStep.swift */; };
+		0CC9B93424EAA5D30025D1A1 /* AppStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B93324EAA5D30025D1A1 /* AppStepper.swift */; };
+		0CC9B93624EAA6ED0025D1A1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B93524EAA6ED0025D1A1 /* BaseViewController.swift */; };
+		0CC9B93824EAA8800025D1A1 /* IntroViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B93724EAA8800025D1A1 /* IntroViewReactor.swift */; };
+		0CC9B93A24EAABFF0025D1A1 /* IntroAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B93924EAABFF0025D1A1 /* IntroAssembler.swift */; };
+		0CC9B93C24EAAC8A0025D1A1 /* IntroFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B93B24EAAC8A0025D1A1 /* IntroFlow.swift */; };
+		0CC9B93E24EAB19C0025D1A1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B93D24EAB19C0025D1A1 /* Colors.swift */; };
 		1EC826E1BD5BAB0131B5B906 /* libPods-MVVM-C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 919AB4BED2212CECEFF566F5 /* libPods-MVVM-C.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C657AB524E94065001BD378 /* MVVM-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C657AB824E94065001BD378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C657ABC24E94065001BD378 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0C657ABF24E94065001BD378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C657ABC24E94065001BD378 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		0C657AC124E94067001BD378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C657AC424E94067001BD378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C657AC624E94067001BD378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C657AEA24E9434D001BD378 /* MVVM-C-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MVVM-C-Bridging-Header.h"; sourceTree = "<group>"; };
+		0CC9B92F24EAA4C90025D1A1 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		0CC9B93124EAA5000025D1A1 /* AppStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStep.swift; sourceTree = "<group>"; };
+		0CC9B93324EAA5D30025D1A1 /* AppStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStepper.swift; sourceTree = "<group>"; };
+		0CC9B93524EAA6ED0025D1A1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0CC9B93724EAA8800025D1A1 /* IntroViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewReactor.swift; sourceTree = "<group>"; };
+		0CC9B93924EAABFF0025D1A1 /* IntroAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroAssembler.swift; sourceTree = "<group>"; };
+		0CC9B93B24EAAC8A0025D1A1 /* IntroFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroFlow.swift; sourceTree = "<group>"; };
+		0CC9B93D24EAB19C0025D1A1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		3E5A1DD56FC48A06425B18CB /* Pods-MVVM-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C.release.xcconfig"; path = "Target Support Files/Pods-MVVM-C/Pods-MVVM-C.release.xcconfig"; sourceTree = "<group>"; };
 		808CF4F7891B4B25E37C685B /* Pods-MVVM-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-C/Pods-MVVM-C.debug.xcconfig"; sourceTree = "<group>"; };
 		919AB4BED2212CECEFF566F5 /* libPods-MVVM-C.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM-C.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,8 +84,6 @@
 				0C657AEF24E94702001BD378 /* View */,
 				0C657AEE24E946F9001BD378 /* ViewController */,
 				0C657AB824E94065001BD378 /* AppDelegate.swift */,
-				0C657ABC24E94065001BD378 /* ViewController.swift */,
-				0C657ABE24E94065001BD378 /* Main.storyboard */,
 				0C657AC124E94067001BD378 /* Assets.xcassets */,
 				0C657AC324E94067001BD378 /* LaunchScreen.storyboard */,
 				0C657AC624E94067001BD378 /* Info.plist */,
@@ -83,6 +95,9 @@
 		0C657AEE24E946F9001BD378 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				0CC9B93524EAA6ED0025D1A1 /* BaseViewController.swift */,
+				0C657ABC24E94065001BD378 /* IntroViewController.swift */,
+				0CC9B93724EAA8800025D1A1 /* IntroViewReactor.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -97,6 +112,9 @@
 		0C657AF024E94708001BD378 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				0CC9B92C24EAA4900025D1A1 /* Flow */,
+				0CC9B92D24EAA4950025D1A1 /* Stepper */,
+				0CC9B92E24EAA49C0025D1A1 /* Step */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -111,6 +129,7 @@
 		0C657AF224E94745001BD378 /* Assembler */ = {
 			isa = PBXGroup;
 			children = (
+				0CC9B93924EAABFF0025D1A1 /* IntroAssembler.swift */,
 			);
 			path = Assembler;
 			sourceTree = "<group>";
@@ -125,8 +144,34 @@
 		0C657AF524E947B5001BD378 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0CC9B93D24EAB19C0025D1A1 /* Colors.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		0CC9B92C24EAA4900025D1A1 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				0CC9B92F24EAA4C90025D1A1 /* AppFlow.swift */,
+				0CC9B93B24EAAC8A0025D1A1 /* IntroFlow.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		0CC9B92D24EAA4950025D1A1 /* Stepper */ = {
+			isa = PBXGroup;
+			children = (
+				0CC9B93324EAA5D30025D1A1 /* AppStepper.swift */,
+			);
+			path = Stepper;
+			sourceTree = "<group>";
+		};
+		0CC9B92E24EAA49C0025D1A1 /* Step */ = {
+			isa = PBXGroup;
+			children = (
+				0CC9B93124EAA5000025D1A1 /* AppStep.swift */,
+			);
+			path = Step;
 			sourceTree = "<group>";
 		};
 		AA07B05938C20A68B11C8255 /* Pods */ = {
@@ -208,7 +253,6 @@
 			files = (
 				0C657AC524E94067001BD378 /* LaunchScreen.storyboard in Resources */,
 				0C657AC224E94067001BD378 /* Assets.xcassets in Resources */,
-				0C657AC024E94065001BD378 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,22 +288,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C657ABD24E94065001BD378 /* ViewController.swift in Sources */,
+				0C657ABD24E94065001BD378 /* IntroViewController.swift in Sources */,
+				0CC9B93E24EAB19C0025D1A1 /* Colors.swift in Sources */,
+				0CC9B93A24EAABFF0025D1A1 /* IntroAssembler.swift in Sources */,
+				0CC9B93224EAA5000025D1A1 /* AppStep.swift in Sources */,
+				0CC9B93C24EAAC8A0025D1A1 /* IntroFlow.swift in Sources */,
+				0CC9B93424EAA5D30025D1A1 /* AppStepper.swift in Sources */,
+				0CC9B93024EAA4C90025D1A1 /* AppFlow.swift in Sources */,
 				0C657AB924E94065001BD378 /* AppDelegate.swift in Sources */,
+				0CC9B93824EAA8800025D1A1 /* IntroViewReactor.swift in Sources */,
+				0CC9B93624EAA6ED0025D1A1 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0C657ABE24E94065001BD378 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0C657ABF24E94065001BD378 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0C657AC324E94067001BD378 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
