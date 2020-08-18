@@ -18,13 +18,24 @@ final class IntroFlow: Flow {
         $0.setNavigationBarHidden(true, animated: false)
     }
     
+    func adapt(step: Step) -> Single<Step> {
+        switch step {
+        case AppStep.introComplete:
+            return .just(AppStep.loginRequired)
+        default:
+            return .just(step)
+        }
+    }
+    
     func navigate(to step: Step) -> FlowContributors {
         guard let step = step as? AppStep else { return .none }
         
         switch step {
         case .introRequired:
             return navigationToIntroViewController()
-        case .introComplete:
+        case .loginRequired:
+            return navigationToSignInViewController()
+        default:
             return .none
         }
     }
@@ -38,5 +49,14 @@ extension IntroFlow {
         
         return .one(flowContributor: .contribute(withNextPresentable: introViewController,
                                                  withNextStepper: introViewController.navigator))
+    }
+    
+    private func navigationToSignInViewController() -> FlowContributors {
+        let signInViewController: SignInViewController = assembler.resolve()
+        
+        navigationController.pushViewController(signInViewController, animated: false)
+        
+        return .one(flowContributor: .contribute(withNextPresentable: signInViewController,
+                                                 withNextStepper: signInViewController.navigator))
     }
 }

@@ -32,7 +32,7 @@ class BaseViewController: UIViewController {
     var disposeBag = DisposeBag()
 }
 
-protocol ServiceDependency: StoryboardView {
+protocol ServiceDependency: ReactorKit.StoryboardView {
     associatedtype S: Stepper
     
     var navigator: S! { get set }
@@ -52,7 +52,7 @@ extension ServiceDependency where Self: UIViewController {
     
     init(reactor:Reactor? = nil, navigator: S) {
         self.init()
-        self.initLayout()
         self.bindReactor(reactor: reactor, navigator: navigator)
+        self.initLayout()
     }
 }

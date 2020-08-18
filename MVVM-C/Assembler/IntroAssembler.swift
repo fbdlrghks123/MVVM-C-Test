@@ -7,28 +7,40 @@
 //
 
 protocol IntroFlowAssembler {
-    func resolve() -> AppStepper
+    func resolve() -> IntroStepper
     
     // MARK: - IntroViewController
     
     func resolve() -> IntroViewController
     
-    func resolve() -> IntroViewReactor
+    
+    // MARK: - SignInViewController
+    
+    func resolve() -> SignInViewController
+    
+    func resolve() -> SignInViewReactor
 }
 
 extension IntroFlowAssembler {
-    func resolve() -> AppStepper {
-        return AppStepper()
+    func resolve() -> IntroStepper {
+        return IntroStepper()
     }
     
     // MARK: - IntroViewController
     
     func resolve() -> IntroViewController {
-        return IntroViewController(reactor: resolve(), navigator: resolve())
+        return IntroViewController(navigator: resolve())
     }
     
-    func resolve() -> IntroViewReactor {
-        return IntroViewReactor()
+    
+    // MARK: - SignInViewController
+    
+    func resolve() -> SignInViewController {
+        return SignInViewController(reactor: resolve(), navigator: resolve())
+    }
+    
+    func resolve() -> SignInViewReactor {
+        return SignInViewReactor()
     }
 }
 

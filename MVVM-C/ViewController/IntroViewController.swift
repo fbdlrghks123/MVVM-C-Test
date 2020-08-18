@@ -8,7 +8,7 @@
 
 final class IntroViewController: BaseViewController, ServiceDependency {
 
-    // MARK : UI
+    // MARK: UI
     
     private let titleLabel = UILabel().then {
         $0.text = "MVVM-C Test"
@@ -16,19 +16,29 @@ final class IntroViewController: BaseViewController, ServiceDependency {
         $0.textColor = .defaultLabelColor
     }
     
-    // MARK : Property
     
-    var navigator: AppStepper!
-    var reactor: IntroViewReactor?
-
-    func bind(reactor: IntroViewReactor) {
-        self.rx.viewDidLoad
-            .subscribe(onNext: { [weak self] _ in
-                self?.view.backgroundColor = .white
-            })
-            .disposed(by: disposeBag)
+    // MARK: Property
+    
+    var navigator: IntroStepper!
+    var reactor: EmptyReactor?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.view.backgroundColor = .background
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        Observable.just(())
+            .bind(to: navigator.introCompleteStepper)
+            .disposed(by: disposeBag)
+    }
+
+    func bind(reactor: EmptyReactor) {
+        
+    }
 }
 
 extension IntroViewController {

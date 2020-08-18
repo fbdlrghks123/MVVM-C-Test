@@ -9,4 +9,6 @@
 enum AppStep: Step {
     case introRequired
     case introComplete
+    
+    case loginRequired
 }
