@@ -19,6 +19,7 @@
 		0CC9B93C24EAAC8A0025D1A1 /* IntroFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B93B24EAAC8A0025D1A1 /* IntroFlow.swift */; };
 		0CC9B93E24EAB19C0025D1A1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B93D24EAB19C0025D1A1 /* Colors.swift */; };
 		1EC826E1BD5BAB0131B5B906 /* libPods-MVVM-C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 919AB4BED2212CECEFF566F5 /* libPods-MVVM-C.a */; };
+		D36C34B524ECE8B3004B6743 /* LocalConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36C34B424ECE8B2004B6743 /* LocalConfiguration.swift */; };
 		D38E221F24EB93A600E30916 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38E221E24EB93A600E30916 /* BaseNavigationController.swift */; };
 		D38E222124EB95E200E30916 /* EmptyReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38E222024EB95E200E30916 /* EmptyReactor.swift */; };
 		D38E222324EBA08D00E30916 /* IntroStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38E222224EBA08D00E30916 /* IntroStepper.swift */; };
@@ -46,6 +47,7 @@
 		3E5A1DD56FC48A06425B18CB /* Pods-MVVM-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C.release.xcconfig"; path = "Target Support Files/Pods-MVVM-C/Pods-MVVM-C.release.xcconfig"; sourceTree = "<group>"; };
 		808CF4F7891B4B25E37C685B /* Pods-MVVM-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-C/Pods-MVVM-C.debug.xcconfig"; sourceTree = "<group>"; };
 		919AB4BED2212CECEFF566F5 /* libPods-MVVM-C.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM-C.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D36C34B424ECE8B2004B6743 /* LocalConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalConfiguration.swift; sourceTree = "<group>"; };
 		D38E221D24EB922700E30916 /* MVVM-C.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MVVM-C.entitlements"; sourceTree = "<group>"; };
 		D38E221E24EB93A600E30916 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		D38E222024EB95E200E30916 /* EmptyReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyReactor.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				D38E222024EB95E200E30916 /* EmptyReactor.swift */,
 				D38E222924EBC60100E30916 /* ASAuthorizationControllerProxy.swift */,
 				D38E222B24EBC64200E30916 /* AuthenticationServices+Rx.swift */,
+				D36C34B424ECE8B2004B6743 /* LocalConfiguration.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				0CC9B93E24EAB19C0025D1A1 /* Colors.swift in Sources */,
 				D38E222C24EBC64200E30916 /* AuthenticationServices+Rx.swift in Sources */,
 				0CC9B93A24EAABFF0025D1A1 /* IntroAssembler.swift in Sources */,
+				D36C34B524ECE8B3004B6743 /* LocalConfiguration.swift in Sources */,
 				0CC9B93224EAA5000025D1A1 /* AppStep.swift in Sources */,
 				0CC9B93C24EAAC8A0025D1A1 /* IntroFlow.swift in Sources */,
 				D38E222524EBA3AE00E30916 /* SignInViewController.swift in Sources */,

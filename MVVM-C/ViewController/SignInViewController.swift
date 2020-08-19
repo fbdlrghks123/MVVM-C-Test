@@ -55,12 +55,10 @@ extension SignInViewController {
     private func bindAction(_ reactor: SignInViewReactor) {
         appleLoginButton.rx
             .loginOnTap(scope: [.fullName, .email])
-            .subscribe(onNext: { result in
-                guard let auth = result.credential as? ASAuthorizationAppleIDCredential else { return }
-                print(auth.user)
-//                print(auth.email)
-//                print(auth.fullName?.givenName)
-//                print(auth.fullName?.familyName)
+            .compactMap { $0.credential as? ASAuthorizationAppleIDCredential }
+            .map { $0.user }
+            .subscribe(onNext: { user in
+                LocalConfiguration.user.set(user)
             })
             .disposed(by: disposeBag)
     }
