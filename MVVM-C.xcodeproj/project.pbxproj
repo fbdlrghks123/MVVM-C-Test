@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0398BE24F26EEF009CC80D /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0398BD24F26EEF009CC80D /* DashBoardViewController.swift */; };
+		0C0398C024F26EF6009CC80D /* EtcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0398BF24F26EF6009CC80D /* EtcViewController.swift */; };
+		0C0398C224F26F04009CC80D /* DashBoardViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0398C124F26F04009CC80D /* DashBoardViewReactor.swift */; };
+		0C0398C424F26F11009CC80D /* EtcViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0398C324F26F11009CC80D /* EtcViewReactor.swift */; };
 		0C657AB924E94065001BD378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C657AB824E94065001BD378 /* AppDelegate.swift */; };
 		0C657ABD24E94065001BD378 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C657ABC24E94065001BD378 /* IntroViewController.swift */; };
 		0C657AC224E94067001BD378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C657AC124E94067001BD378 /* Assets.xcassets */; };
@@ -30,6 +34,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C0398BD24F26EEF009CC80D /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		0C0398BF24F26EF6009CC80D /* EtcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtcViewController.swift; sourceTree = "<group>"; };
+		0C0398C124F26F04009CC80D /* DashBoardViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewReactor.swift; sourceTree = "<group>"; };
+		0C0398C324F26F11009CC80D /* EtcViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtcViewReactor.swift; sourceTree = "<group>"; };
 		0C657AB524E94065001BD378 /* MVVM-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C657AB824E94065001BD378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C657ABC24E94065001BD378 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +78,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C0398B924F26EC1009CC80D /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				0C0398BD24F26EEF009CC80D /* DashBoardViewController.swift */,
+				0C0398C124F26F04009CC80D /* DashBoardViewReactor.swift */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		0C0398BC24F26EDD009CC80D /* Etc */ = {
+			isa = PBXGroup;
+			children = (
+				0C0398BF24F26EF6009CC80D /* EtcViewController.swift */,
+				0C0398C324F26F11009CC80D /* EtcViewReactor.swift */,
+			);
+			path = Etc;
+			sourceTree = "<group>";
+		};
 		0C657AAC24E94065001BD378 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +137,8 @@
 		0C657AEE24E946F9001BD378 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				0C0398B924F26EC1009CC80D /* DashBoard */,
+				0C0398BC24F26EDD009CC80D /* Etc */,
 				0CC9B93524EAA6ED0025D1A1 /* BaseViewController.swift */,
 				D38E221E24EB93A600E30916 /* BaseNavigationController.swift */,
 				0C657ABC24E94065001BD378 /* IntroViewController.swift */,
@@ -312,14 +340,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C657ABD24E94065001BD378 /* IntroViewController.swift in Sources */,
+				0C0398C424F26F11009CC80D /* EtcViewReactor.swift in Sources */,
+				0C0398C024F26EF6009CC80D /* EtcViewController.swift in Sources */,
 				D38E222A24EBC60100E30916 /* ASAuthorizationControllerProxy.swift in Sources */,
 				0CC9B93E24EAB19C0025D1A1 /* Colors.swift in Sources */,
 				D38E222C24EBC64200E30916 /* AuthenticationServices+Rx.swift in Sources */,
 				0CC9B93A24EAABFF0025D1A1 /* IntroAssembler.swift in Sources */,
 				D36C34B524ECE8B3004B6743 /* LocalConfiguration.swift in Sources */,
 				0CC9B93224EAA5000025D1A1 /* AppStep.swift in Sources */,
+				0C0398C224F26F04009CC80D /* DashBoardViewReactor.swift in Sources */,
 				0CC9B93C24EAAC8A0025D1A1 /* IntroFlow.swift in Sources */,
 				D38E222524EBA3AE00E30916 /* SignInViewController.swift in Sources */,
+				0C0398BE24F26EEF009CC80D /* DashBoardViewController.swift in Sources */,
 				0CC9B93424EAA5D30025D1A1 /* AppStepper.swift in Sources */,
 				D38E222724EBA3CA00E30916 /* SignInViewReactor.swift in Sources */,
 				D38E222124EB95E200E30916 /* EmptyReactor.swift in Sources */,
