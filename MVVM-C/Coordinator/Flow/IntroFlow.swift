@@ -20,6 +20,12 @@ final class IntroFlow: Flow {
     
     func adapt(step: Step) -> Single<Step> {
         switch step {
+        case AppStep.introRequired:
+            if LocalConfiguration.user.value != nil {
+                return .just(AppStep.tabBarRequired)
+            }
+            return .just(step)
+            
         case AppStep.introComplete:
             return .just(AppStep.loginRequired)
         default:
@@ -35,6 +41,8 @@ final class IntroFlow: Flow {
             return navigationToIntroViewController()
         case .loginRequired:
             return navigationToSignInViewController()
+        case .tabBarRequired:
+            return .end(forwardToParentFlowWithStep: step)
         default:
             return .none
         }

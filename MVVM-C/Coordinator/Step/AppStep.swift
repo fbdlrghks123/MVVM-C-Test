@@ -11,4 +11,7 @@ enum AppStep: Step {
     case introComplete
     
     case loginRequired
+    case loginComplete
+    
+    case tabBarRequired
 }

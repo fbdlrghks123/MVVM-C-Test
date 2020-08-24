@@ -15,6 +15,8 @@
 		0C657ABD24E94065001BD378 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C657ABC24E94065001BD378 /* IntroViewController.swift */; };
 		0C657AC224E94067001BD378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C657AC124E94067001BD378 /* Assets.xcassets */; };
 		0C657AC524E94067001BD378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C657AC324E94067001BD378 /* LaunchScreen.storyboard */; };
+		0C98FF6124F40262002C8BD4 /* TabbarFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C98FF6024F40262002C8BD4 /* TabbarFlow.swift */; };
+		0C98FF6624F403E8002C8BD4 /* DashBoardFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C98FF6524F403E8002C8BD4 /* DashBoardFlow.swift */; };
 		0CC9B93024EAA4C90025D1A1 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B92F24EAA4C90025D1A1 /* AppFlow.swift */; };
 		0CC9B93224EAA5000025D1A1 /* AppStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B93124EAA5000025D1A1 /* AppStep.swift */; };
 		0CC9B93424EAA5D30025D1A1 /* AppStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B93324EAA5D30025D1A1 /* AppStepper.swift */; };
@@ -45,6 +47,8 @@
 		0C657AC424E94067001BD378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C657AC624E94067001BD378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C657AEA24E9434D001BD378 /* MVVM-C-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MVVM-C-Bridging-Header.h"; sourceTree = "<group>"; };
+		0C98FF6024F40262002C8BD4 /* TabbarFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarFlow.swift; sourceTree = "<group>"; };
+		0C98FF6524F403E8002C8BD4 /* DashBoardFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardFlow.swift; sourceTree = "<group>"; };
 		0CC9B92F24EAA4C90025D1A1 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 		0CC9B93124EAA5000025D1A1 /* AppStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStep.swift; sourceTree = "<group>"; };
 		0CC9B93324EAA5D30025D1A1 /* AppStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStepper.swift; sourceTree = "<group>"; };
@@ -199,11 +203,29 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		0C98FF6224F4037A002C8BD4 /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				0C98FF6524F403E8002C8BD4 /* DashBoardFlow.swift */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		0C98FF6424F4038C002C8BD4 /* Etc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Etc;
+			sourceTree = "<group>";
+		};
 		0CC9B92C24EAA4900025D1A1 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				0C98FF6224F4037A002C8BD4 /* DashBoard */,
+				0C98FF6424F4038C002C8BD4 /* Etc */,
 				0CC9B92F24EAA4C90025D1A1 /* AppFlow.swift */,
 				0CC9B93B24EAAC8A0025D1A1 /* IntroFlow.swift */,
+				0C98FF6024F40262002C8BD4 /* TabbarFlow.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -340,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C657ABD24E94065001BD378 /* IntroViewController.swift in Sources */,
+				0C98FF6624F403E8002C8BD4 /* DashBoardFlow.swift in Sources */,
 				0C0398C424F26F11009CC80D /* EtcViewReactor.swift in Sources */,
 				0C0398C024F26EF6009CC80D /* EtcViewController.swift in Sources */,
 				D38E222A24EBC60100E30916 /* ASAuthorizationControllerProxy.swift in Sources */,
@@ -360,6 +383,7 @@
 				D38E221F24EB93A600E30916 /* BaseNavigationController.swift in Sources */,
 				0C657AB924E94065001BD378 /* AppDelegate.swift in Sources */,
 				0CC9B93624EAA6ED0025D1A1 /* BaseViewController.swift in Sources */,
+				0C98FF6124F40262002C8BD4 /* TabbarFlow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

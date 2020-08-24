@@ -69,9 +69,3 @@ extension LocalConfigurationType {
         LocalConfigurationType.sStorage.synchronize()
     }
 }
-
-extension Reactive where Base: LocalConfiguration {
-    var user: Observable<String?> {
-        return Observable.just(Base.user.value)
-    }
-}
