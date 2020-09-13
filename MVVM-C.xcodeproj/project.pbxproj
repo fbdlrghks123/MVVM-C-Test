@@ -40,6 +40,11 @@
 		D38E222724EBA3CA00E30916 /* SignInViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38E222624EBA3CA00E30916 /* SignInViewReactor.swift */; };
 		D38E222A24EBC60100E30916 /* ASAuthorizationControllerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38E222924EBC60100E30916 /* ASAuthorizationControllerProxy.swift */; };
 		D38E222C24EBC64200E30916 /* AuthenticationServices+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38E222B24EBC64200E30916 /* AuthenticationServices+Rx.swift */; };
+		D3F0D38624FF92770028E1FF /* EtcFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D38524FF92770028E1FF /* EtcFlow.swift */; };
+		D3F0D38924FF92C70028E1FF /* EtcStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D38724FF92C70028E1FF /* EtcStepper.swift */; };
+		D3F0D38A24FF92C70028E1FF /* DashBoardStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D38824FF92C70028E1FF /* DashBoardStepper.swift */; };
+		D3F0D38C24FF92F60028E1FF /* DashBoardStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D38B24FF92F60028E1FF /* DashBoardStep.swift */; };
+		D3F0D38E24FF92FD0028E1FF /* EtcStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D38D24FF92FD0028E1FF /* EtcStep.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +87,11 @@
 		D38E222624EBA3CA00E30916 /* SignInViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewReactor.swift; sourceTree = "<group>"; };
 		D38E222924EBC60100E30916 /* ASAuthorizationControllerProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAuthorizationControllerProxy.swift; sourceTree = "<group>"; };
 		D38E222B24EBC64200E30916 /* AuthenticationServices+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationServices+Rx.swift"; sourceTree = "<group>"; };
+		D3F0D38524FF92770028E1FF /* EtcFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtcFlow.swift; sourceTree = "<group>"; };
+		D3F0D38724FF92C70028E1FF /* EtcStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtcStepper.swift; sourceTree = "<group>"; };
+		D3F0D38824FF92C70028E1FF /* DashBoardStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardStepper.swift; sourceTree = "<group>"; };
+		D3F0D38B24FF92F60028E1FF /* DashBoardStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardStep.swift; sourceTree = "<group>"; };
+		D3F0D38D24FF92FD0028E1FF /* EtcStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtcStep.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,8 +248,8 @@
 		0CC9B92C24EAA4900025D1A1 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				D3F0D38424FF926E0028E1FF /* Etc */,
 				0C98FF6224F4037A002C8BD4 /* DashBoard */,
-				0C98FF6424F4038C002C8BD4 /* Etc */,
 				0CC9B92F24EAA4C90025D1A1 /* AppFlow.swift */,
 				0CC9B93B24EAAC8A0025D1A1 /* IntroFlow.swift */,
 				0C98FF6024F40262002C8BD4 /* TabbarFlow.swift */,
@@ -254,6 +264,8 @@
 				0CF3BDB7250DE93400333445 /* EtcStepper.swift */,
 				0CC9B93324EAA5D30025D1A1 /* AppStepper.swift */,
 				D38E222224EBA08D00E30916 /* IntroStepper.swift */,
+				D3F0D38824FF92C70028E1FF /* DashBoardStepper.swift */,
+				D3F0D38724FF92C70028E1FF /* EtcStepper.swift */,
 			);
 			path = Stepper;
 			sourceTree = "<group>";
@@ -264,6 +276,8 @@
 				0CF3BDBB250DE99200333445 /* DashBoardStep.swift */,
 				0CF3BDBC250DE99200333445 /* EtcStep.swift */,
 				0CC9B93124EAA5000025D1A1 /* AppStep.swift */,
+				D3F0D38B24FF92F60028E1FF /* DashBoardStep.swift */,
+				D3F0D38D24FF92FD0028E1FF /* EtcStep.swift */,
 			);
 			path = Step;
 			sourceTree = "<group>";
@@ -283,6 +297,14 @@
 				919AB4BED2212CECEFF566F5 /* libPods-MVVM-C.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3F0D38424FF926E0028E1FF /* Etc */ = {
+			isa = PBXGroup;
+			children = (
+				D3F0D38524FF92770028E1FF /* EtcFlow.swift */,
+			);
+			path = Etc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
