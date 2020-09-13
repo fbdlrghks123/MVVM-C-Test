@@ -24,13 +24,13 @@
 		0CC9B93A24EAABFF0025D1A1 /* IntroAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B93924EAABFF0025D1A1 /* IntroAssembler.swift */; };
 		0CC9B93C24EAAC8A0025D1A1 /* IntroFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B93B24EAAC8A0025D1A1 /* IntroFlow.swift */; };
 		0CC9B93E24EAB19C0025D1A1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B93D24EAB19C0025D1A1 /* Colors.swift */; };
-		0CF3BDB6250DE84300333445 /* EtcFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3BDB5250DE84300333445 /* EtcFlow.swift */; };
 		0CF3BDB9250DE93400333445 /* EtcStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3BDB7250DE93400333445 /* EtcStepper.swift */; };
 		0CF3BDBA250DE93400333445 /* DashBoardStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3BDB8250DE93400333445 /* DashBoardStepper.swift */; };
 		0CF3BDBD250DE99200333445 /* DashBoardStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3BDBB250DE99200333445 /* DashBoardStep.swift */; };
 		0CF3BDBE250DE99200333445 /* EtcStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3BDBC250DE99200333445 /* EtcStep.swift */; };
 		0CF3BDC1250DEA3400333445 /* EtcAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3BDBF250DEA3400333445 /* EtcAssembler.swift */; };
 		0CF3BDC2250DEA3400333445 /* DashBoardAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3BDC0250DEA3400333445 /* DashBoardAssembler.swift */; };
+		0CF3BDC5250DEF1B00333445 /* EtcFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3BDC4250DEF1B00333445 /* EtcFlow.swift */; };
 		1EC826E1BD5BAB0131B5B906 /* libPods-MVVM-C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 919AB4BED2212CECEFF566F5 /* libPods-MVVM-C.a */; };
 		D36C34B524ECE8B3004B6743 /* LocalConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36C34B424ECE8B2004B6743 /* LocalConfiguration.swift */; };
 		D38E221F24EB93A600E30916 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38E221E24EB93A600E30916 /* BaseNavigationController.swift */; };
@@ -40,11 +40,6 @@
 		D38E222724EBA3CA00E30916 /* SignInViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38E222624EBA3CA00E30916 /* SignInViewReactor.swift */; };
 		D38E222A24EBC60100E30916 /* ASAuthorizationControllerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38E222924EBC60100E30916 /* ASAuthorizationControllerProxy.swift */; };
 		D38E222C24EBC64200E30916 /* AuthenticationServices+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38E222B24EBC64200E30916 /* AuthenticationServices+Rx.swift */; };
-		D3F0D38624FF92770028E1FF /* EtcFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D38524FF92770028E1FF /* EtcFlow.swift */; };
-		D3F0D38924FF92C70028E1FF /* EtcStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D38724FF92C70028E1FF /* EtcStepper.swift */; };
-		D3F0D38A24FF92C70028E1FF /* DashBoardStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D38824FF92C70028E1FF /* DashBoardStepper.swift */; };
-		D3F0D38C24FF92F60028E1FF /* DashBoardStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D38B24FF92F60028E1FF /* DashBoardStep.swift */; };
-		D3F0D38E24FF92FD0028E1FF /* EtcStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D38D24FF92FD0028E1FF /* EtcStep.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +70,7 @@
 		0CF3BDBC250DE99200333445 /* EtcStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtcStep.swift; sourceTree = "<group>"; };
 		0CF3BDBF250DEA3400333445 /* EtcAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtcAssembler.swift; sourceTree = "<group>"; };
 		0CF3BDC0250DEA3400333445 /* DashBoardAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardAssembler.swift; sourceTree = "<group>"; };
+		0CF3BDC4250DEF1B00333445 /* EtcFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtcFlow.swift; sourceTree = "<group>"; };
 		3E5A1DD56FC48A06425B18CB /* Pods-MVVM-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C.release.xcconfig"; path = "Target Support Files/Pods-MVVM-C/Pods-MVVM-C.release.xcconfig"; sourceTree = "<group>"; };
 		808CF4F7891B4B25E37C685B /* Pods-MVVM-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-C/Pods-MVVM-C.debug.xcconfig"; sourceTree = "<group>"; };
 		919AB4BED2212CECEFF566F5 /* libPods-MVVM-C.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM-C.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +83,6 @@
 		D38E222624EBA3CA00E30916 /* SignInViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewReactor.swift; sourceTree = "<group>"; };
 		D38E222924EBC60100E30916 /* ASAuthorizationControllerProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAuthorizationControllerProxy.swift; sourceTree = "<group>"; };
 		D38E222B24EBC64200E30916 /* AuthenticationServices+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationServices+Rx.swift"; sourceTree = "<group>"; };
-		D3F0D38524FF92770028E1FF /* EtcFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtcFlow.swift; sourceTree = "<group>"; };
 		D3F0D38724FF92C70028E1FF /* EtcStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtcStepper.swift; sourceTree = "<group>"; };
 		D3F0D38824FF92C70028E1FF /* DashBoardStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardStepper.swift; sourceTree = "<group>"; };
 		D3F0D38B24FF92F60028E1FF /* DashBoardStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardStep.swift; sourceTree = "<group>"; };
@@ -131,6 +126,7 @@
 				0C657AB624E94065001BD378 /* Products */,
 				AA07B05938C20A68B11C8255 /* Pods */,
 				D14ABA99A441D857CA115BB3 /* Frameworks */,
+				0CF3BDC3250DEEA300333445 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -237,14 +233,6 @@
 			path = DashBoard;
 			sourceTree = "<group>";
 		};
-		0C98FF6424F4038C002C8BD4 /* Etc */ = {
-			isa = PBXGroup;
-			children = (
-				0CF3BDB5250DE84300333445 /* EtcFlow.swift */,
-			);
-			path = Etc;
-			sourceTree = "<group>";
-		};
 		0CC9B92C24EAA4900025D1A1 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +270,14 @@
 			path = Step;
 			sourceTree = "<group>";
 		};
+		0CF3BDC3250DEEA300333445 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				0CF3BDB5250DE84300333445 /* EtcFlow.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		AA07B05938C20A68B11C8255 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,7 +298,7 @@
 		D3F0D38424FF926E0028E1FF /* Etc */ = {
 			isa = PBXGroup;
 			children = (
-				D3F0D38524FF92770028E1FF /* EtcFlow.swift */,
+				0CF3BDC4250DEF1B00333445 /* EtcFlow.swift */,
 			);
 			path = Etc;
 			sourceTree = "<group>";
@@ -416,10 +412,10 @@
 				0CC9B93A24EAABFF0025D1A1 /* IntroAssembler.swift in Sources */,
 				0CF3BDBD250DE99200333445 /* DashBoardStep.swift in Sources */,
 				D36C34B524ECE8B3004B6743 /* LocalConfiguration.swift in Sources */,
+				0CF3BDC5250DEF1B00333445 /* EtcFlow.swift in Sources */,
 				0CC9B93224EAA5000025D1A1 /* AppStep.swift in Sources */,
 				0C0398C224F26F04009CC80D /* DashBoardViewReactor.swift in Sources */,
 				0CC9B93C24EAAC8A0025D1A1 /* IntroFlow.swift in Sources */,
-				0CF3BDB6250DE84300333445 /* EtcFlow.swift in Sources */,
 				D38E222524EBA3AE00E30916 /* SignInViewController.swift in Sources */,
 				0C0398BE24F26EEF009CC80D /* DashBoardViewController.swift in Sources */,
 				0CF3BDBA250DE93400333445 /* DashBoardStepper.swift in Sources */,
