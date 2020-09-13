@@ -12,16 +12,16 @@ final class DashBoardViewController: BaseViewController, ServiceDependency {
     
     // MARK: Property
     
-    var navigator: IntroStepper!
-    var reactor: EmptyReactor?
+    var navigator: DashBoardStepper!
+    var reactor: DashBoardViewReactor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = .background
+        self.view.backgroundColor = .systemBackground
     }
     
-    func bind(reactor: EmptyReactor) {
+    func bind(reactor: DashBoardViewReactor) {
         
     }
 }
@@ -31,4 +31,3 @@ extension DashBoardViewController {
         
     }
 }
-

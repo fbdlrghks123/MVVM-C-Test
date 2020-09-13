@@ -24,6 +24,13 @@
 		0CC9B93A24EAABFF0025D1A1 /* IntroAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B93924EAABFF0025D1A1 /* IntroAssembler.swift */; };
 		0CC9B93C24EAAC8A0025D1A1 /* IntroFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B93B24EAAC8A0025D1A1 /* IntroFlow.swift */; };
 		0CC9B93E24EAB19C0025D1A1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9B93D24EAB19C0025D1A1 /* Colors.swift */; };
+		0CF3BDB6250DE84300333445 /* EtcFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3BDB5250DE84300333445 /* EtcFlow.swift */; };
+		0CF3BDB9250DE93400333445 /* EtcStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3BDB7250DE93400333445 /* EtcStepper.swift */; };
+		0CF3BDBA250DE93400333445 /* DashBoardStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3BDB8250DE93400333445 /* DashBoardStepper.swift */; };
+		0CF3BDBD250DE99200333445 /* DashBoardStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3BDBB250DE99200333445 /* DashBoardStep.swift */; };
+		0CF3BDBE250DE99200333445 /* EtcStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3BDBC250DE99200333445 /* EtcStep.swift */; };
+		0CF3BDC1250DEA3400333445 /* EtcAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3BDBF250DEA3400333445 /* EtcAssembler.swift */; };
+		0CF3BDC2250DEA3400333445 /* DashBoardAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3BDC0250DEA3400333445 /* DashBoardAssembler.swift */; };
 		1EC826E1BD5BAB0131B5B906 /* libPods-MVVM-C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 919AB4BED2212CECEFF566F5 /* libPods-MVVM-C.a */; };
 		D36C34B524ECE8B3004B6743 /* LocalConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36C34B424ECE8B2004B6743 /* LocalConfiguration.swift */; };
 		D38E221F24EB93A600E30916 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38E221E24EB93A600E30916 /* BaseNavigationController.swift */; };
@@ -56,6 +63,13 @@
 		0CC9B93924EAABFF0025D1A1 /* IntroAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroAssembler.swift; sourceTree = "<group>"; };
 		0CC9B93B24EAAC8A0025D1A1 /* IntroFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroFlow.swift; sourceTree = "<group>"; };
 		0CC9B93D24EAB19C0025D1A1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0CF3BDB5250DE84300333445 /* EtcFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtcFlow.swift; sourceTree = "<group>"; };
+		0CF3BDB7250DE93400333445 /* EtcStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtcStepper.swift; sourceTree = "<group>"; };
+		0CF3BDB8250DE93400333445 /* DashBoardStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardStepper.swift; sourceTree = "<group>"; };
+		0CF3BDBB250DE99200333445 /* DashBoardStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardStep.swift; sourceTree = "<group>"; };
+		0CF3BDBC250DE99200333445 /* EtcStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtcStep.swift; sourceTree = "<group>"; };
+		0CF3BDBF250DEA3400333445 /* EtcAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtcAssembler.swift; sourceTree = "<group>"; };
+		0CF3BDC0250DEA3400333445 /* DashBoardAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardAssembler.swift; sourceTree = "<group>"; };
 		3E5A1DD56FC48A06425B18CB /* Pods-MVVM-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C.release.xcconfig"; path = "Target Support Files/Pods-MVVM-C/Pods-MVVM-C.release.xcconfig"; sourceTree = "<group>"; };
 		808CF4F7891B4B25E37C685B /* Pods-MVVM-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-C/Pods-MVVM-C.debug.xcconfig"; sourceTree = "<group>"; };
 		919AB4BED2212CECEFF566F5 /* libPods-MVVM-C.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM-C.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +193,8 @@
 		0C657AF224E94745001BD378 /* Assembler */ = {
 			isa = PBXGroup;
 			children = (
+				0CF3BDC0250DEA3400333445 /* DashBoardAssembler.swift */,
+				0CF3BDBF250DEA3400333445 /* EtcAssembler.swift */,
 				0CC9B93924EAABFF0025D1A1 /* IntroAssembler.swift */,
 			);
 			path = Assembler;
@@ -214,6 +230,7 @@
 		0C98FF6424F4038C002C8BD4 /* Etc */ = {
 			isa = PBXGroup;
 			children = (
+				0CF3BDB5250DE84300333445 /* EtcFlow.swift */,
 			);
 			path = Etc;
 			sourceTree = "<group>";
@@ -233,6 +250,8 @@
 		0CC9B92D24EAA4950025D1A1 /* Stepper */ = {
 			isa = PBXGroup;
 			children = (
+				0CF3BDB8250DE93400333445 /* DashBoardStepper.swift */,
+				0CF3BDB7250DE93400333445 /* EtcStepper.swift */,
 				0CC9B93324EAA5D30025D1A1 /* AppStepper.swift */,
 				D38E222224EBA08D00E30916 /* IntroStepper.swift */,
 			);
@@ -242,6 +261,8 @@
 		0CC9B92E24EAA49C0025D1A1 /* Step */ = {
 			isa = PBXGroup;
 			children = (
+				0CF3BDBB250DE99200333445 /* DashBoardStep.swift */,
+				0CF3BDBC250DE99200333445 /* EtcStep.swift */,
 				0CC9B93124EAA5000025D1A1 /* AppStep.swift */,
 			);
 			path = Step;
@@ -362,23 +383,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C657ABD24E94065001BD378 /* IntroViewController.swift in Sources */,
+				0CF3BDB9250DE93400333445 /* EtcStepper.swift in Sources */,
 				0C98FF6624F403E8002C8BD4 /* DashBoardFlow.swift in Sources */,
 				0C0398C424F26F11009CC80D /* EtcViewReactor.swift in Sources */,
+				0CF3BDBE250DE99200333445 /* EtcStep.swift in Sources */,
 				0C0398C024F26EF6009CC80D /* EtcViewController.swift in Sources */,
 				D38E222A24EBC60100E30916 /* ASAuthorizationControllerProxy.swift in Sources */,
 				0CC9B93E24EAB19C0025D1A1 /* Colors.swift in Sources */,
 				D38E222C24EBC64200E30916 /* AuthenticationServices+Rx.swift in Sources */,
 				0CC9B93A24EAABFF0025D1A1 /* IntroAssembler.swift in Sources */,
+				0CF3BDBD250DE99200333445 /* DashBoardStep.swift in Sources */,
 				D36C34B524ECE8B3004B6743 /* LocalConfiguration.swift in Sources */,
 				0CC9B93224EAA5000025D1A1 /* AppStep.swift in Sources */,
 				0C0398C224F26F04009CC80D /* DashBoardViewReactor.swift in Sources */,
 				0CC9B93C24EAAC8A0025D1A1 /* IntroFlow.swift in Sources */,
+				0CF3BDB6250DE84300333445 /* EtcFlow.swift in Sources */,
 				D38E222524EBA3AE00E30916 /* SignInViewController.swift in Sources */,
 				0C0398BE24F26EEF009CC80D /* DashBoardViewController.swift in Sources */,
+				0CF3BDBA250DE93400333445 /* DashBoardStepper.swift in Sources */,
 				0CC9B93424EAA5D30025D1A1 /* AppStepper.swift in Sources */,
 				D38E222724EBA3CA00E30916 /* SignInViewReactor.swift in Sources */,
+				0CF3BDC2250DEA3400333445 /* DashBoardAssembler.swift in Sources */,
 				D38E222124EB95E200E30916 /* EmptyReactor.swift in Sources */,
 				0CC9B93024EAA4C90025D1A1 /* AppFlow.swift in Sources */,
+				0CF3BDC1250DEA3400333445 /* EtcAssembler.swift in Sources */,
 				D38E222324EBA08D00E30916 /* IntroStepper.swift in Sources */,
 				D38E221F24EB93A600E30916 /* BaseNavigationController.swift in Sources */,
 				0C657AB924E94065001BD378 /* AppDelegate.swift in Sources */,

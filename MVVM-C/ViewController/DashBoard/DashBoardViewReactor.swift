@@ -6,4 +6,12 @@
 //  Copyright © 2020 test. All rights reserved.
 //
 
-
+final class DashBoardViewReactor: Reactor {
+    typealias Action = NoAction
+    
+    struct State {
+        
+    }
+    
+    var initialState = State()
+}

@@ -23,6 +23,8 @@ final class AppFlow: Flow {
         switch step {
         case .introRequired:
             return windowToIntroFlow()
+        case .tabBarRequired:
+            return windowToTabbarFlow()
         default:
             return .none
         }
@@ -33,12 +35,23 @@ extension AppFlow {
     private func windowToIntroFlow() -> FlowContributors {
         let introFlow = IntroFlow()
 
-        Flows.use(introFlow, when: .ready) { [unowned self] root in
-            self.window.rootViewController = root
+        Flows.use(introFlow, when: .ready) { [weak self] root in
+            self?.window.rootViewController = root
         }
 
         return .one(flowContributor: .contribute(withNextPresentable: introFlow,
                                                  withNextStepper: OneStepper(withSingleStep: AppStep.introRequired)))
+    }
+    
+    private func windowToTabbarFlow() -> FlowContributors {
+        let tabbarFlow = TabbarFlow()
+        
+        Flows.use(tabbarFlow, when: .ready) { [weak self] root in
+            self?.window.rootViewController = root
+        }
+        
+        return .one(flowContributor: .contribute(withNextPresentable: tabbarFlow,
+                                                 withNextStepper: OneStepper(withSingleStep: AppStep.tabBarRequired)))
     }
 }
 

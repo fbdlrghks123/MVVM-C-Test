@@ -25,7 +25,7 @@ final class IntroViewController: BaseViewController, ServiceDependency {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = .background
+        self.view.backgroundColor = .systemBackground
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -6,4 +6,12 @@
 //  Copyright © 2020 test. All rights reserved.
 //
 
-import Foundation
+final class EtcViewReactor: Reactor {
+    typealias Action = NoAction
+    
+    struct State {
+        
+    }
+    
+    var initialState = State()
+}

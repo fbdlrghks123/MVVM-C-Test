@@ -22,5 +22,14 @@ final class IntroStepper: Stepper {
             .map { AppStep.introComplete }
             .bind(to: steps)
             .disposed(by: disposeBag)
+        
+        LocalConfigurationType.sStorage.rx
+            .observe(String.self, LocalConfiguration.user.key.rawValue)
+            .distinctUntilChanged()
+            .observeOn(MainScheduler.asyncInstance)
+            .filter { $0 != nil }
+            .map { _ in AppStep.tabBarRequired }
+            .bind(to: steps)
+            .disposed(by: disposeBag)
     }
 }

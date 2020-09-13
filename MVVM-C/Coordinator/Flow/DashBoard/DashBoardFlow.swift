@@ -8,6 +8,8 @@
 
 final class DashBoardFlow: Flow {
     
+    private let assembler = DashBoardAssembler()
+    
     var root: Presentable {
         return navigationController
     }
@@ -15,10 +17,22 @@ final class DashBoardFlow: Flow {
     private let navigationController = UINavigationController()
     
     func navigate(to step: Step) -> FlowContributors {
-        return .none
+        guard let step = step as? DashBoardStep else { return .none }
+        
+        switch step {
+        case .initDashBoard:
+            return navigationToDashBoard()
+        }
     }
 }
 
 extension DashBoardFlow {
-    
+    private func navigationToDashBoard() -> FlowContributors {
+        let dashBoardViewController: DashBoardViewController = assembler.resolve()
+        
+        navigationController.pushViewController(dashBoardViewController, animated: false)
+        
+        return .one(flowContributor: .contribute(withNextPresentable: dashBoardViewController,
+                                                 withNextStepper: dashBoardViewController.navigator))
+    }
 }
